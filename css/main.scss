@@ -1,0 +1,16 @@
+// color variables
+$header-bg-color: light-blue;
+$body-main-bg: grey;
+$header-bg: red;
+
+body{
+    background-color: $body-main-bg;
+        header{
+            background-color: $header-bg;
+            h1{
+                color: white;
+                text-align: center;
+            }
+        }
+}
+
