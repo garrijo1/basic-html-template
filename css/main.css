@@ -1,3 +1,28 @@
+.HTML {
+  background-color: #383E56;
+  color: white;
+}
+
+.SASS {
+  background-color: #F69E7B;
+  color: white;
+}
+
+.TypeScript {
+  background-color: #EEDAD1;
+  color: white;
+}
+
+.Angular {
+  background-color: D4B5B0;
+  color: white;
+}
+
+.Karma {
+  background-color: #C4C4C4;
+  color: white;
+}
+
 body {
   background-color: grey;
 }
