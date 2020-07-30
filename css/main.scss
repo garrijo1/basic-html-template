@@ -1,19 +1,56 @@
 @import 'constants.scss';
 
+.navbar-items {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+@mixin navbar-font {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
 .HTML {
-    background-color: #383E56;color: white
+    @extend .navbar-items;
+    background-color: #383E56;
+    a {
+      @include navbar-font;
+    }
   }
   .SASS{
-    background-color: #F69E7B;color: white
+    @extend .navbar-items;
+    background-color: #F69E7B;
+    a {
+      @include navbar-font;
+    }
   }
   .TypeScript{
-    background-color: #EEDAD1;color:white
+    @extend .navbar-items;
+    background-color: #EEDAD1;
+    a {
+      @include navbar-font;
+    }
   }
   .Angular{
-    background-color: D4B5B0; color: white
+    @extend .navbar-items;
+    background-color: D4B5B0;
+    a {
+      @include navbar-font;
+    }
   }
   .Karma{
-    background-color: #C4C4C4; color:white
+    @extend .navbar-items;
+    background-color: #C4C4C4;
+    a {
+      @include navbar-font;
+    }
   }
 
 body{
@@ -26,4 +63,5 @@ body{
             }
         }
 }
+
 
