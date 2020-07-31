@@ -68,15 +68,17 @@
 }
 
 body {
-  background-color: grey;
+  margin: 0;
 }
 
 body header {
-  background-color: red;
+  background-color: #D83B3B;
+  padding: 10px;
 }
 
 body header h1 {
-  color: white;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

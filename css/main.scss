@@ -54,11 +54,13 @@
   }
 
 body{
-    background-color: $body-main-bg;
+    margin:0;
         header{
             background-color: $header-bg;
+            padding:10px;
             h1{
-                color: white;
+                color: $header-color;
+                font-family:$regular-font;
                 text-align: center;
             }
         }
