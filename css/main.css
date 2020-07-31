@@ -57,6 +57,8 @@
 
 .Karma {
   background-color: #C4C4C4;
+  background-color: #EEDAD1;
+  color: white;
 }
 
 .Karma a {
@@ -67,16 +69,27 @@
   text-decoration: none;
 }
 
+.Angular {
+  background-color: D4B5B0;
+  color: white;
+}
+
+.Karma {
+  background-color: #C4C4C4;
+  color: white;
+}
+
 body {
-  background-color: grey;
+  margin: 0;
 }
 
 body header {
-  background-color: red;
+  background-color: #D83B3B;
 }
 
 body header h1 {
-  color: white;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

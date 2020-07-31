@@ -61,11 +61,12 @@
   }
 
 body{
-    background-color: $body-main-bg;
+    margin: 0;
         header{
             background-color: $header-bg;
             h1{
-                color: white;
+                color: $header-color;
+                font-family: $regular-font;
                 text-align: center;
             }
         }
