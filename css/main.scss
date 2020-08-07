@@ -3,10 +3,11 @@
 .navbar-items {
   float: left;
   width: 20%;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
   list-style-type: none;
+  text-align: center;
 }
 
 @mixin navbar-font {
@@ -51,19 +52,20 @@
     a {
       @include navbar-font;
     }
-    background-color: #EEDAD1;color:white;
+    background-color: #EEDAD1;
   }
   .Angular{
-    background-color: D4B5B0; color: white;
+    background-color: D4B5B0;
   }
   .Karma{
-    background-color: #C4C4C4; color:white;
+    background-color: #C4C4C4;
   }
 
 body{
     margin: 0;
         header{
             background-color: $header-bg;
+            padding: 10px;
             h1{
                 color: $header-color;
                 font-family: $regular-font;
@@ -72,4 +74,56 @@ body{
         }
 }
 
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
 
+main {
+  section {  
+    float: left;
+    text-align: center;
+    width: 50%;
+
+    &.left-section {
+      background-color: $left-col-bg;
+      padding: 35px 0;
+
+      img {
+        width: 350px;
+      }
+    }
+
+    &.right-section {
+      background-color: $right-col-bg;
+    }
+  }
+
+  .logo-text {
+    display: block;
+    color: #D4B5B0; 
+    font-size: 28px;
+    font-family: $regular-font;
+    position: absolute;
+    top: 333px;
+    left: 18%;
+  }
+}
+
+@media only screen and (min-width:1920px) {
+  main {
+    .logo-text {
+      left: 20%;
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  main {
+    .logo-text {
+      left: 13%;
+    }
+  }
+}

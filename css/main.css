@@ -1,10 +1,11 @@
 .navbar-items, .HTML, .SASS, .TypeScript, .Angular, .Karma {
   float: left;
   width: 20%;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
   list-style-type: none;
+  text-align: center;
 }
 
 .HTML {
@@ -58,7 +59,6 @@
 .Karma {
   background-color: #C4C4C4;
   background-color: #EEDAD1;
-  color: white;
 }
 
 .Karma a {
@@ -71,12 +71,10 @@
 
 .Angular {
   background-color: D4B5B0;
-  color: white;
 }
 
 .Karma {
   background-color: #C4C4C4;
-  color: white;
 }
 
 body {
@@ -85,11 +83,58 @@ body {
 
 body header {
   background-color: #D83B3B;
+  padding: 10px;
 }
 
 body header h1 {
   color: black;
   font-family: "Fira Sans", sans-serif;
   text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+main section {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+main section.left-section {
+  background-color: rgba(212, 181, 176, 0.2);
+  padding: 35px 0;
+}
+
+main section.left-section img {
+  width: 350px;
+}
+
+main section.right-section {
+  background-color: #D3DBFF;
+}
+
+main .logo-text {
+  display: block;
+  color: #D4B5B0;
+  font-size: 28px;
+  font-family: "Fira Sans", sans-serif;
+  position: absolute;
+  top: 333px;
+  left: 18%;
+}
+
+@media only screen and (min-width: 1920px) {
+  main .logo-text {
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .logo-text {
+    left: 13%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
