@@ -1,10 +1,11 @@
 .navbar-items, .HTML, .SASS, .TypeScript, .Angular, .Karma {
   float: left;
   width: 20%;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
   list-style-type: none;
+  text-align: center;
 }
 
 .HTML {
@@ -80,5 +81,51 @@ body header h1 {
   color: black;
   font-family: "Fira Sans", sans-serif;
   text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+main section {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+main section.left-section {
+  background-color: rgba(212, 181, 176, 0.2);
+  padding: 35px 0;
+}
+
+main section.left-section img {
+  width: 350px;
+}
+
+main.right-section {
+  background-color: #D3DBFF;
+}
+
+.logo-text {
+  display: block;
+  color: #D4B5B0;
+  font-size: 28px;
+  font-family: "Fira Sans", sans-serif;
+  position: absolute;
+  top: 333px;
+  left: 18%;
+}
+
+@media only screen and (min-width: 1920px) {
+  main .logo-text {
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .logo-text {
+    left: 13%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
