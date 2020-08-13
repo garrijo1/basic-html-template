@@ -15,7 +15,6 @@
 .HTML a {
   font-size: 20px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -27,7 +26,6 @@
 .SASS a {
   font-size: 20px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -39,19 +37,17 @@
 .TypeScript a {
   font-size: 20px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
 
 .Angular {
-  background-color: D4B5B0;
+  background-color: #D4B5B0;
 }
 
 .Angular a {
   font-size: 20px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -63,12 +59,12 @@
 .Karma a {
   font-size: 20px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
 
 body {
+  font-family: "Fira Sans", sans-serif;
   margin: 0;
 }
 
@@ -79,7 +75,6 @@ body header {
 
 body header h1 {
   color: black;
-  font-family: "Fira Sans", sans-serif;
   text-align: center;
 }
 
@@ -103,15 +98,29 @@ main section.left-section img {
   width: 350px;
 }
 
-main.right-section {
+main section.right-section {
   background-color: #D3DBFF;
+  height: 500;
 }
 
-.logo-text {
+main section.right-section p {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+main section.right-section p.sub-text-1 {
+  color: #3C4670;
+  margin-bottom: 24px;
+}
+
+main section.right-section p.sub-text-2 {
+  color: #4B4B4A;
+}
+
+main .logo-text {
   display: block;
   color: #D4B5B0;
   font-size: 28px;
-  font-family: "Fira Sans", sans-serif;
   position: absolute;
   top: 333px;
   left: 18%;
