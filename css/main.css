@@ -117,6 +117,16 @@ main section.right-section p.sub-text-2 {
   color: #4B4B4A;
 }
 
+main section.right-section button {
+  background-color: #F69E7B;
+  font-size: 33px;
+  font-family: "Fira Sans", sans-serif;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  color: #171D33;
+}
+
 main .logo-text {
   display: block;
   color: #D4B5B0;

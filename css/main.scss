@@ -119,6 +119,15 @@ main {
           color:#4B4B4A;
         }
       }
+      button{
+        background-color: $signup-button-bg;
+        font-size: 33px;
+        font-family: $regular-font;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 25px;
+        color: $sign-up-text;
+      }
     }
   }
 
