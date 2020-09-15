@@ -127,7 +127,13 @@ main section.right-section button {
   color: #171D33;
 }
 
-main .logo-text {
+main section.right-section button a {
+  color: #171d33;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.logo-text {
   display: block;
   color: #D4B5B0;
   font-size: 28px;

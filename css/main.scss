@@ -127,7 +127,13 @@ main {
         padding: 10px 30px;
         border-radius: 25px;
         color: $sign-up-text;
+        }
+        button a{
+          color: #171d33;
+          text-decoration-line: none;
+        }
       }
+
     }
   }
 
@@ -141,7 +147,7 @@ main {
   left: 18%;
 
 }
-}
+
 
 @media only screen and (min-width:1920px) {
   main {
