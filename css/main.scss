@@ -3,65 +3,164 @@
 .navbar-items {
   float: left;
   width: 20%;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
   list-style-type: none;
+  text-align: center;
 }
 
 @mixin navbar-font {
   font-size: 20px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
 
+
 .HTML {
-    @extend .navbar-items;
-    background-color: #383E56;
-    a {
-      @include navbar-font;
-    }
+  @extend .navbar-items;
+  background-color: $html-nav-bg;
+
+  a {
+    @include navbar-font;
   }
-  .SASS{
-    @extend .navbar-items;
-    background-color: #F69E7B;
-    a {
-      @include navbar-font;
-    }
+}
+
+.SASS {
+  @extend .navbar-items;
+  background-color: $sass-nav-bg;
+
+  a {
+    @include navbar-font;
   }
-  .TypeScript{
-    @extend .navbar-items;
-    background-color: #EEDAD1;
-    a {
-      @include navbar-font;
-    }
+}
+
+.TypeScript {
+  @extend .navbar-items;
+  background-color: $typescript-nav-bg;
+
+  a {
+    @include navbar-font;
   }
-  .Angular{
-    @extend .navbar-items;
-    background-color: D4B5B0;
-    a {
-      @include navbar-font;
-    }
+}
+
+.Angular {
+  @extend .navbar-items;
+  background-color: $angular-nav-bg;
+
+  a {
+    @include navbar-font;
   }
-  .Karma{
-    @extend .navbar-items;
-    background-color: #C4C4C4;
-    a {
-      @include navbar-font;
+}
+
+.Karma {
+  @extend .navbar-items;
+  background-color: $karma-nav-bg;
+
+  a {
+    @include navbar-font;
+  }
+}
+
+body {
+  font-family: $regular-font;
+  margin: 0;
+
+  header {
+    background-color: $header-bg;
+    padding: 10px;
+
+    h1 {
+      color: $header-color;
+      text-align: center;
     }
   }
 
-body{
-    background-color: $body-main-bg;
-        header{
-            background-color: $header-bg;
-            h1{
-                color: white;
-                text-align: center;
-            }
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+main {
+  section {
+    float: left;
+    width: 50%;
+    text-align: center;
+
+
+    &.left-section {
+
+      background-color: $left-col-bg;
+      padding: 35px 0;
+
+      img {
+        width: 350px;
+      }
+    }
+
+    &.right-section {
+      background-color: $right-col-bg;
+      height:500;
+
+      p{
+        font-size:33px;
+        font-weight: 700;
+
+        &.sub-text-1{
+          color: #3C4670;
+          margin-bottom: 24px;
         }
+        &.sub-text-2{
+          color:#4B4B4A;
+        }
+      }
+      button{
+        background-color: $signup-button-bg;
+        font-size: 33px;
+        font-family: $regular-font;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 25px;
+        color: $sign-up-text;
+        }
+        button a{
+          color: #171d33;
+          text-decoration-line: none;
+        }
+      }
+
+    }
+  }
+
+
+.logo-text {
+  display: block;
+  color: #D4B5B0;
+  font-size: 28px;
+  position: absolute;
+  top: 333px;
+  left: 18%;
+
 }
 
 
+@media only screen and (min-width:1920px) {
+  main {
+    .logo-text {
+      left: 20%;
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  main {
+    .logo-text {
+      left: 13%;
+    }
+  }
+}
